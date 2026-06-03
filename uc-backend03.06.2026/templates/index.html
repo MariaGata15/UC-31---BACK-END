@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Alunos</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ecf,#ff69b4);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    width:700px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    color:#ff1493;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#ff69b4;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#ff1493;
+}
+
+.erro{
+    background:#ffdddd;
+    color:#a10000;
+    padding:10px;
+    border-left:5px solid red;
+    margin-bottom:10px;
+}
+
+.sucesso{
+    margin-top:20px;
+    background:#dfffe0;
+    padding:20px;
+    border-left:5px solid green;
+}
+
+.sucesso h2{
+    color:green;
+    margin-bottom:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Cadastro de Alunos</h1>
+
+    <form method="POST">
+
+        <label>Nome Completo</label>
+        <input type="text" name="nome">
+
+        <label>E-mail</label>
+        <input type="email" name="email">
+
+        <label>Telefone</label>
+        <input type="text" name="telefone">
+
+        <label>CPF</label>
+        <input type="text" name="cpf">
+
+        <label>Cidade</label>
+        <input type="text" name="cidade">
+
+        <label>Estado</label>
+        <input type="text" name="estado">
+
+        <label>Curso</label>
+        <input type="text" name="curso">
+
+        <label>Idade</label>
+        <input type="number" name="idade">
+
+        <label>Senha</label>
+        <input type="password" name="senha">
+
+        <button type="submit">
+            Cadastrar
+        </button>
+
+    </form>
+
+    {% if erros %}
+        {% for erro in erros %}
+            <div class="erro">
+                {{ erro }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if dados %}
+    <div class="sucesso">
+
+        <h2>Cadastro realizado com sucesso!</h2>
+
+        <p><strong>Nome:</strong> {{ dados.nome }}</p>
+        <p><strong>E-mail:</strong> {{ dados.email }}</p>
+        <p><strong>Telefone:</strong> {{ dados.telefone }}</p>
+        <p><strong>CPF:</strong> {{ dados.cpf }}</p>
+        <p><strong>Cidade:</strong> {{ dados.cidade }}</p>
+        <p><strong>Estado:</strong> {{ dados.estado }}</p>
+        <p><strong>Curso:</strong> {{ dados.curso }}</p>
+        <p><strong>Idade:</strong> {{ dados.idade }}</p>
+
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
