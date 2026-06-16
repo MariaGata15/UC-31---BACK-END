@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Critério: Exibir mensagem personalizada com o nome do usuário -->
+    <h1>Área Restrita</h1>
+    <p>Olá, <strong>{{ usuario }}</strong>! Você está logado no sistema.</p>
+    
+    <p><a href="{{ url_for('logout') }}">Fazer Logout</a></p>
+{% endblock %}
