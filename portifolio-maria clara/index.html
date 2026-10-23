@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Maria Clara, estudante de desenvolvimento web.">
+    <title>Maria Clara | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body id="topo">
+
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="#inicio" class="logo" aria-label="Maria Clara, página inicial">mc<span>.</span></a>
+
+            <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menuNavegacao">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu" id="menuNavegacao" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button class="tema-botao" id="temaBotao" aria-label="Ativar modo escuro" title="Alternar tema">☾</button>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- INÍCIO -->
+        <section class="inicio secao" id="inicio">
+            <div class="container inicio-grade">
+                <div class="inicio-texto">
+                    <p class="destaque" id="saudacao">Olá!</p>
+                    <p>Meu nome é</p>
+
+                    <h1>Maria Clara <span>Teixeira</span></h1>
+
+                    <h2>Estudante de Desenvolvimento Web</h2>
+
+                    <p class="descricao">
+                        Estou construindo minha jornada na tecnologia, aprendendo a
+                        transformar ideias em páginas funcionais, acessíveis e bonitas.
+                    </p>
+
+                    <a href="#projetos" class="botao">
+                        Conheça meus projetos ↗
+                    </a>
+                </div>
+
+                <div class="inicio-visual">
+                    <div class="foto-perfil">
+                        <img src="img/foto.jpeg" alt="Foto de perfil de Maria Clara">
+                    </div>
+                    <p class="etiqueta">♡ Aprendendo sempre</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section class="secao sobre" id="sobre">
+            <div class="container sobre-grade">
+                <div>
+                    <p class="destaque">Um pouco sobre mim</p>
+                    <h2 class="titulo-secao">
+                        Curiosa por natureza,<br>
+                        <span>criativa por escolha.</span>
+                    </h2>
+                </div>
+
+                <div class="sobre-texto">
+                    <p>
+                        Sou estudante da área de tecnologia e estou desenvolvendo minhas
+                        habilidades em programação e criação de sites. Gosto de aprender
+                        na prática, testar ideias e entender como cada parte de um projeto
+                        funciona.
+                    </p>
+
+                    <p>
+                        Meu objetivo é continuar evoluindo como desenvolvedora, ampliar
+                        meus conhecimentos em desenvolvimento web e participar de projetos
+                        que resolvam problemas reais. Quero conquistar uma oportunidade
+                        de estágio para aprender e contribuir com dedicação.
+                    </p>
+
+                    <p class="frase">
+                        ✿ Em constante aprendizado, um projeto de cada vez.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="secao" id="habilidades">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <p class="destaque">O que estou aprendendo</p>
+                    <h2 class="titulo-secao">Minhas <span>habilidades</span></h2>
+                    <p>Tecnologias que venho estudando e praticando durante o curso.</p>
+                </div>
+
+                <div class="habilidades-grade">
+                    <article class="habilidade-card">
+                        <span class="icone-habilidade">5</span>
+                        <h3>HTML5</h3>
+                        <p>Estruturação de páginas web.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+
+                    <article class="habilidade-card">
+                        <span class="icone-habilidade">✿</span>
+                        <h3>CSS3</h3>
+                        <p>Estilização, layouts e responsividade.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+
+                    <article class="habilidade-card">
+                        <span class="icone-habilidade">JS</span>
+                        <h3>JavaScript</h3>
+                        <p>Interatividade e lógica de programação.</p>
+                        <span class="nivel">Aprendendo</span>
+                    </article>
+
+                    <article class="habilidade-card">
+                        <span class="icone-habilidade">Py</span>
+                        <h3>Python e Flask</h3>
+                        <p>Rotas, formulários e aplicações web.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+
+                    <article class="habilidade-card">
+                        <span class="icone-habilidade">SQL</span>
+                        <h3>Banco de dados</h3>
+                        <p>Consultas SQL e uso de SQLite.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+
+                    <article class="habilidade-card">
+                        <span class="icone-habilidade">⌘</span>
+                        <h3>Git e GitHub</h3>
+                        <p>Controle de versões e publicação de projetos.</p>
+                        <span class="nivel">Quero aprofundar</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="secao projetos" id="projetos">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <p class="destaque">Prática que vira experiência</p>
+                    <h2 class="titulo-secao">Meus <span>projetos</span></h2>
+                    <p>
+                        Alguns trabalhos desenvolvidos durante o curso.
+                        Personalize as descrições para refletirem o que você realmente fez.
+                    </p>
+                </div>
+
+                <div class="projetos-grade">
+                    <article class="projeto-card">
+                        <div class="projeto-imagem imagem-um" role="img"
+                            aria-label="Ilustração de uma tela de cadastro de alunos">
+                            <span>Cadastro de alunos</span>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Sistema de cadastro de alunos</h3>
+                            <p>
+                                Sistema para cadastrar e consultar estudantes, praticando
+                                formulários, rotas e integração com banco de dados.
+                            </p>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>SQLite</li>
+                            </ul>
+                            <a class="link-projeto" href="#contato">Detalhes em breve ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-imagem imagem-dois" role="img"
+                            aria-label="Ilustração de uma página de cardápio">
+                            <span>Cardápio digital</span>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Site de delivery</h3>
+                            <p>
+                                Site com páginas de início, cardápio, pedidos e contato,
+                                praticando navegação e organização de conteúdo.
+                            </p>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap*</li>
+                            </ul>
+                            <a class="link-projeto" href="#contato">Detalhes em breve ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-imagem imagem-tres" role="img"
+                            aria-label="Ilustração de uma tela de login e favoritos">
+                            <span>Minha área ♡</span>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Login e lista de favoritos</h3>
+                            <p>
+                                Exercício de aplicação web para praticar login, sessões
+                                e interação com preferências dos usuários.
+                            </p>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>Sessões</li>
+                            </ul>
+                            <a class="link-projeto" href="#contato">Detalhes em breve ↗</a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="observacao">
+                    *Confira se essas tecnologias correspondem ao projeto que você desenvolveu.
+                    Mantenha apenas projetos reais do curso.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="secao" id="contato">
+            <div class="container contato-grade">
+                <div class="contato-texto">
+                    <p class="destaque">Vamos conversar?</p>
+                    <h2 class="titulo-secao">Entre em <span>contato</span></h2>
+                    <p>
+                        Quer conversar sobre tecnologia, projetos ou oportunidades
+                        de aprendizado? Preencha o formulário.
+                    </p>
+                    <p class="privacidade">
+                        Os dados seriam usados apenas para responder à mensagem.
+                        Este formulário é uma demonstração e não envia nem armazena informações.
+                    </p>
+                </div>
+
+                <form class="formulario" id="formularioContato" novalidate>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required
+                            aria-describedby="erroNome">
+                        <small class="erro" id="erroNome"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required
+                            aria-describedby="erroEmail">
+                        <small class="erro" id="erroEmail"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required
+                            aria-describedby="erroMensagem"></textarea>
+                        <small class="erro" id="erroMensagem"></small>
+                    </div>
+
+                    <div class="campo consentimento">
+                        <input type="checkbox" id="consentimento" name="consentimento" required>
+                        <label for="consentimento">
+                            Concordo com o uso dos dados informados para receber uma resposta.
+                        </label>
+                    </div>
+                    <small class="erro" id="erroConsentimento"></small>
+
+                    <button type="submit" class="botao botao-enviar">
+                        Validar mensagem ↗
+                    </button>
+
+                    <p id="retornoFormulario" class="retorno" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <a href="#inicio" class="logo" aria-label="Voltar ao início">mc<span>.</span></a>
+            <p>Feito com carinho e vontade de aprender por Maria Clara.</p>
+            <p>© <span id="anoAtual"></span> Maria Clara.</p>
+            <a href="#topo" class="voltar-topo">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
